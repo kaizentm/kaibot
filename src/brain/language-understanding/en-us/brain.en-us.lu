@@ -29,3 +29,7 @@
 - start unit test {@on=on branch} {@on={@branchname=test}}
 - trigger unit test
 - trigger unit testing {@on=on} {@on={@branchname=master}}
+
+> # Entity definitions
+@ ml on hasRoles "on branch",@branch
+    - @ ml branchname
