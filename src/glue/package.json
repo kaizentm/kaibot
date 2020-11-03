@@ -1,0 +1,14 @@
+{
+  "name": "glue",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "func start",
+    "test": "echo \"No tests yet...\""
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "sync-request": "^6.1.0"
+  },
+  "devDependencies": {}
+}

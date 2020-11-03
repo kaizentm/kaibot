@@ -1,0 +1,9 @@
+{
+    "azureFunctions.deploySubpath": "src/glue",
+    "azureFunctions.postDeployTask": "npm install",
+    "azureFunctions.projectLanguage": "JavaScript",
+    "azureFunctions.projectRuntime": "~3",
+    "debug.internalConsoleOptions": "neverOpen",
+    "azureFunctions.projectSubpath": "src/glue",
+    "azureFunctions.preDeployTask": "npm prune"
+}

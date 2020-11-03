@@ -1,0 +1,3 @@
+# https://medium.com/@wagnernoise/installing-pyaudio-on-macos-9a5557176c4d
+pyaudio
+speech_recognition
