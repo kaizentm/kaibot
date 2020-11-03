@@ -1,0 +1,14 @@
+[import](common.lg)
+
+# SendActivity_Welcome
+- ${WelcomeUser()}
+
+# SendActivity_003038
+- You said '${turn.activity.text}'
+
+# SendActivity_TnCguA()
+- You want to run unit tests
+# SendActivity_tUAY3I()
+- You want to run load testing
+# SendActivity_C1qhr1()
+- You want to run end to end testing
