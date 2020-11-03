@@ -1,0 +1,17 @@
+name: FULL_TEST
+on:
+  repository_dispatch:
+    types: [Full test]
+    
+jobs:
+  deploy_to_qa:
+    runs-on: ubuntu-latest
+
+    steps:    
+    - name: Copy Repository Contents
+      uses: actions/checkout@master
+    
+    - name: Run tests
+      uses: TrueBrain/actions-flake8@master
+      with:
+        path: src
