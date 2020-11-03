@@ -1,11 +1,13 @@
 const request = require('sync-request');
 // const brain_url = 'http://localhost:4390'; 
 require("dotenv").config();
-const mouth_url = process.env.MOUTH_URL;
 
 module.exports = async function (context, req) {
 
     const head_name = req.body.name
+    var mouth_url_var_name = head_name + '_MOUTH_URL';
+    mouth_url_var_name = mouth_url_var_name.toUpperCase();
+    const mouth_url = process.env[mouth_url_var_name];
     //uncomment when brain is ready
     // const responseMessage = request('POST', brain_url , req.body.message);
     
