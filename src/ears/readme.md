@@ -1,0 +1,3 @@
+- Update .env with your name
+- Install requirements
+- python ear-mac.py (Works on Mac only!)

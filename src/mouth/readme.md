@@ -1,0 +1,2 @@
+- npm install sync-request
+- node mouth-mac.js (Works on Mac only!)
