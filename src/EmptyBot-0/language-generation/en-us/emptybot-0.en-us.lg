@@ -1,0 +1,9 @@
+[import](common.lg)
+
+# SendActivity_Welcome
+- ${WelcomeUser()}
+
+
+# SendActivity_0K1Q77()
+- hello
+- hi

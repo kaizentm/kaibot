@@ -1,0 +1,6 @@
+{
+    "$kind": "Microsoft.CrossTrainedRecognizerSet",
+    "recognizers": [
+        "emptybot-0.lu"
+    ]
+}

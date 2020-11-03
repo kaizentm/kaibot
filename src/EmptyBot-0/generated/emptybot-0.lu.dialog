@@ -1,0 +1,8 @@
+{
+    "$kind": "Microsoft.MultiLanguageRecognizer",
+    "id": "LUIS_emptybot-0",
+    "recognizers": {
+        "en-us": "emptybot-0.en-us.lu",
+        "": "emptybot-0.en-us.lu"
+    }
+}

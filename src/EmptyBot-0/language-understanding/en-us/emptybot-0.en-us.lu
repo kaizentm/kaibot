@@ -1,0 +1,42 @@
+
+> LUIS application information
+> !# @app.name = kaibot
+> !# @app.versionId = 0.1
+> !# @app.culture = en-us
+> !# @app.luis_schema_version = 7.0.0
+> !# @app.tokenizerVersion = 1.0.0
+
+
+> # Intent definitions
+
+# end_to_end_test
+- begin end to end test
+- begin end to end testing {@on=@branch} {@on={@branchname=master}}
+- start end to end test
+- start end-to-end testing {@on=on} {@on={@branchname=mybranch}}
+- start full test
+- start full testing {@on=on} {@on={@branchname=master}}
+- trigger end to end test
+# load_test_2
+- begin load test
+- begin load testing {@on=@branch} {@on={@branchname=master}}
+- kick off load test
+- start load test
+- start load test {@on=on branch} {@on={@branchname=dev}}
+- start load test on branch {@on={@branchname=master}}
+- start load test {@on=on} {@on={@branchname=dev}}
+- start load testing
+- trigger load test
+# None
+
+
+# unit_test
+- begin unit test
+- begin unit testing {@on=@branch} {@on={@branchname=master}}
+- begin unit testing {@on=on} {@on={@branchname=dev}}
+- kick off unit test
+- start unit test
+- start unit test {@on=on branch} {@on={@branchname=master}}
+- start unit test {@on=on branch} {@on={@branchname=test}}
+- trigger unit test
+- trigger unit testing {@on=on} {@on={@branchname=master}}
