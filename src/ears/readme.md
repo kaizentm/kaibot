@@ -1,3 +1,3 @@
-- Update .env with your name
-- Install requirements
-- python ear-mac.py (Works on Mac only!)
+- Update .env with your name and speech service key
+- pip3 install -r requirements.txt
+- python ear-msft.py
