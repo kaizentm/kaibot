@@ -10,12 +10,14 @@ FlaskJSON(app)
 tts = speech()
 
 
-@app.route('/say', methods=['POST'])
+@app.route('/', methods=['POST'])
 def say():
     # We use 'force' to skip mimetype checking to have shorter curl command.
-    data = request.get_json(force=True)
+    data = request.get_data()
     try:
-        message = str(data['message'])
+        # message = str(data['message'])
+        message = data.decode("utf-8") 
+        print(message)
     except (KeyError, TypeError, ValueError):
         return json_response(status_=400, status="Failed: Invalid message")
 
@@ -26,4 +28,5 @@ def say():
 
 
 if __name__ == '__main__':
-    app.run()
+    # app.run()
+    app.run(host='0.0.0.0', port=4390)

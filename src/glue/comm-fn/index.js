@@ -1,5 +1,6 @@
+// const df = require("durable-functions");
 const request = require('sync-request');
-// const brain_url = 'http://localhost:4390'; 
+const brain_url = 'https://kaibotbrain.azurewebsites.net/api/brain-fn'; 
 require("dotenv").config();
 
 module.exports = async function (context, req) {
@@ -8,14 +9,20 @@ module.exports = async function (context, req) {
     var mouth_url_var_name = head_name + '_MOUTH_URL';
     mouth_url_var_name = mouth_url_var_name.toUpperCase();
     const mouth_url = process.env[mouth_url_var_name];
-    //uncomment when brain is ready
-    // const responseMessage = request('POST', brain_url , req.body.message);
     
-    const responseMessage = head_name + ",You have just said " + req.body.message; 
+    const responseMessage = request('POST', brain_url , {json: {'name':head_name, 'message': req.body.message}});
+    buf = Buffer.from(responseMessage.body)
+    console.log(buf.toString());
+
     
-    request('POST', mouth_url, {body: responseMessage});
+    // const responseMessage = 'hello'
+    // yield context.df.callActivity("ApproveTask",  taskId)
+    
+    // const responseMessage = head_name + ",You have just said " + req.body.message; 
+    
+    request('POST', mouth_url, {body: buf.toString()});
     context.res = {
         // status: 200, /* Defaults to 200 */
-        body: responseMessage
+        body: buf.toString()
     };
 }

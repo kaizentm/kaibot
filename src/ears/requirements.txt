@@ -1,3 +1,6 @@
-# https://medium.com/@wagnernoise/installing-pyaudio-on-macos-9a5557176c4d
-pyaudio
-speech_recognition
+azure-cognitiveservices-speech
+
+# for ear-mac.py:
+# # https://medium.com/@wagnernoise/installing-pyaudio-on-macos-9a5557176c4d
+# pyaudio
+# speech_recognition
